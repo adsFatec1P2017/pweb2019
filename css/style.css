@@ -1,0 +1,255 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans",sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+.center{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+.clear{
+	clear: both;
+}
+.header{
+	background-color:#D6D6D6;
+	padding: 15px 0;
+}
+#logo_1{
+	float: left;
+	width: 160px;
+	margin-left: 15px;
+}
+#logo_2{
+	margin-right: 15px;
+	margin-top: 4px;
+	float: right;
+	width: 160px;
+}
+.principal{
+	background-image: url("../img/cover-form.jpg");
+	background-position: center;
+	
+	background-size: cover;
+	
+	min-height: 500px;
+	position: relative;
+}
+.campo_form{
+	float: right;
+	margin-right: 40px;
+	background-color: rgba(255, 255, 255, 0.7);
+	max-width: 400px;
+	width: 95%;
+	top: 10px;
+	position: relative;
+	height: calc(100% - 20px);
+	
+}
+.campo_form h2{
+	background-color: rgba(234, 236, 239,0.7);
+	font-weight: normal;
+	font-size: 18px;
+	padding: 30px 20px ;
+	width: 100%;
+}
+.campo_form form{
+	padding: 0 8%;
+	width: 100%;
+}
+.campo_form input{
+	min-height: 45px;
+	max-width: 320px;
+	width: 96%;
+	border: 0;
+	padding-left: 10px;
+}
+.campo_form input:focus{
+	outline: 0;
+}
+.campo_form p{
+	margin-top: 20px;
+	font-size: 14px;
+	color: rgb(50, 50, 50);
+}
+.campo_form input[type="submit"]{
+	margin-top: 20px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	min-height: 55px;
+	border: 0;
+	font-size: 20px;
+	background-color:#033c50;
+}
+.campo_form p:last-of-type{
+	margin-bottom: 25px;
+}
+section.box .arrow{
+	background-image: url('../img/arrow.png');
+	width: 62px;
+	height: 62px;
+	left: 50%;
+	top: -31px;
+	transform: translateX(-50%);
+	position: absolute;
+	background-repeat: no-repeat;
+	padding: 0;
+	background-size: contain;
+	background-position: center;
+}
+.box{
+	
+	background-color:#D2E2FD;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.box div{
+	text-align: center;
+	padding: 70px 20px;
+	width: 100%;
+	color: #033C50;
+}
+.box h2{
+	font-weight: normal;
+	font-size: 37px;
+}
+.box p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.section{
+	margin-top: 3px;
+	display: flex;
+	background-color: #E4F5FF;
+}
+.imagem{
+
+	width: 60%;
+	background-position: center;
+	background-size: cover;
+	min-height: 320px;
+}
+.texto{
+	width: 40%;
+	
+	font-size: 18px;
+	padding: 100px 30px;
+
+	
+}
+.texto p{
+	width: 97%;
+	color: #0f2547;
+	
+	line-height: 35px;
+	letter-spacing: 1.3px;
+
+}
+.text_per{
+	margin-top: 10px;
+	font-weight:bold;
+	font-size: 15px;
+	line-height: 40px;
+}
+.lazer, .ultimo{
+	margin-top: 3px;
+	background-color: #e6ecef;
+	text-align: center;
+}
+.lazer p{
+	line-height: 35px;
+	color: #0f2547;
+	padding: 70px 30px;
+}
+
+.ultimo h2{
+	padding: 70px 20px;
+	text-transform: uppercase;
+	font-size: 27px;
+	color: red;
+	font-weight: normal;
+}
+.footer {
+	text-align: center;
+	padding: 40px 20px;
+	width: 100%;
+}
+.footer div{
+	text-align: center;
+
+}
+.footer img{
+	display: inline-block;
+	margin-top: 20px;
+	width: 140px;
+}
+@media screen and (max-width: 1100px){
+	
+	.campo_form{
+		float: none;
+		width: 95%;
+		position: relative;
+	
+		display: inline-block;
+		margin-right: 0;
+		
+	}
+	
+	.principal{
+		text-align: center;
+		position: relative;
+		padding: 30px 0;
+	}
+
+}
+@media screen and (max-width: 768px){
+	.section{
+		/*flex-direction: column;*/
+		display: block;
+	}
+	.texto{
+		/*order: 1 !important;*/
+		width: 100%;
+		text-align: justify;
+		padding:70px 20px;
+	}
+	.texto p{
+		width: 95%;
+		
+	}
+	.imagem{
+		/*order: 2 !important;*/
+		width: 100%;
+	}
+}
+@media screen and (max-width: 540px)
+{
+	
+		#logo_1,#logo_2{
+		
+		float: none;
+		display: block;
+		
+		margin: 0 auto;
+
+		
+	}
+	#logo_2{
+		
+		margin-top: 40px;
+	}
+	.header{
+		padding: 20px 0;
+	}
+	.principal{
+		padding: 70px 0;
+	}
+}
